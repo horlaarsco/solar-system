@@ -35,9 +35,6 @@ class SolarSystemApp:
         self.query_entry.bind("<KeyPress>", self.handle_enter_press)
         self.query_entry.pack(padx=10, pady=5)
 
-        # TODO - remove this
-        self.query_entry.insert(0, "How many moons does Earth have")
-
         tk.Button(self.root, text="Submit", command=self.process_query).pack(
             padx=10, pady=5
         )
